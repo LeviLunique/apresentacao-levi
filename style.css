@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --primary-color: #121212;
-    --secondary-color: #F3F3F3;
-    --accent-color: #22A6B3;
-    --hover-color: #1B4F72;
+    --primary-color: #2E2E2E;
+    --secondary-color: #FAFAFA;
+    --accent-color: #8C4B5A;
+    --hover-color: #6E3747;
 
     --primary-font: 'Krona One', sans-serif;
     --secondary-font: 'Montserrat', sans-serif;
@@ -52,17 +52,6 @@ body {
 .content {
     flex: 1;
 }
-
-/* .image-container {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--secondary-color);
-    padding: 10px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-} */
 
 .profile-image {
     width: 300px;
