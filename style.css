@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --primary-color: #121212;
+    --secondary-color: #F3F3F3;
+    --accent-color: #22A6B3;
+    --hover-color: #1B4F72;
+
+    --primary-font: 'Krona One', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    padding: 20px;
+}
+
+.header {
+    font-family: var(--primary-font);
+    color: var(--accent-color);
+    text-align: left;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 2em;
+}
+
+.header h4 {
+    font-size: 1.2em;
+    color: var(--secondary-color);
+}
+
+.main-content {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.content {
+    flex: 1;
+}
+
+/* .image-container {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+.profile-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.section {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: var(--accent-color);
+    font-family: var(--primary-font);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Social Media Button Styling */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.social-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.social-button:hover {
+    background-color: var(--hover-color);
+}
+
+.footer {
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    padding: 15px;
+    font-size: 1em;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 20px;
+    }
+}
